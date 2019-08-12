@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<style type="text/css">
+		.card{
+		margin: auto;
+		margin-top: 100px;
+		border: 1px solid black;padding: 3px
+	}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="#">Quiz Management</a>
+	    </div>
+	    <ul class="nav navbar-nav">
+	      <li class="active"><a href="#">Home</a></li>
+	    </ul>
+	  </div>
+	</nav>
+				
+				<div class="card" style="width: 50rem;">
+				  <div class="card-body">
+				    <h5 class="card-title">Sign Up</h5>
+				    <form action="Register.php" method="POST">
+				 		 <div class="form-group">
+								<input type="text" name="name"  class="form-control input-lg" placeholder="name">
+						</div>				  		
+						<div class="form-group">
+								<input type="text" name="username"  class="form-control input-lg" placeholder="username">
+						</div>
+						<div class="form-group">
+								<input type="email" name="email"  class="form-control input-lg" placeholder="Email Address">
+						</div>
+						<div class="form-group">
+								<input type="password" name="password" class="form-control input-lg" placeholder="Password">
+						</div>
+				  		<div class="form-group">
+				    		You are:
+				    		<select class="form-control" name="role">
+				    			<option>Teacher</option>
+				    			<option>Student</option>
+				    		</select>
+				  		</div>
+				  		<input type="submit" name="submit" value="submit">
+					</form>
+				  </div>
+				</div>
+</body>
+</html>
